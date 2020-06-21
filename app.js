@@ -525,4 +525,751 @@
 
 // /////////////////////////////////////////////////////////////////
 
+/* Chapter 21-25 */
 
+// /* Task 1 */
+
+// var f_name = prompt("what is your first name? ")
+// var l_name = prompt("what is your last name? ")
+// var full_name = f_name+" "+l_name
+// alert(full_name)
+
+// /* Task 2 */
+
+// var fav_mobile = prompt("What is your Favorite mobile phone? ")
+// alert("Length of String : "+fav_mobile.length)
+
+// /* Task 3 */
+
+// var country = "pakistan"
+// alert("index of 'n': "+country.indexOf("n"))
+
+// /* Task 4 */
+
+// var word = "Hello World"
+// alert(word)
+// alert("Last index of 'l': "+word.lastIndexOf("l"))
+
+// /* Task 5 */
+
+// var word = "pakistani"
+// alert("character at index 3: "+word.charAt(3))
+
+// /* Task 6 */
+
+// var f_name = prompt("what is your first name? ")
+// var l_name = prompt("what is your last name? ")
+// var full_name = f_name.concat(l_name)
+// alert(full_name)
+
+// /* Task 7 */
+
+// var city = "hyderabad"
+// var res = city.replace("hyder","islam")
+// alert(res)
+
+// /* Task 8 */
+
+// str = "Ali and Sami are best friends. They play cricket and football together.".split("and").join("&");
+// alert(str)
+
+// /* Task 9 */
+
+// var value = "472"
+// alert("value: "+value)
+// alert(typeof value)
+// var value1 = 472
+// alert("value: "+value1)
+// alert(typeof value1)
+
+
+// /* Task 10 */
+
+// var word = prompt("Enter in lower case to convert")
+// alert(word.toUpperCase())
+
+// /* Task 11 */
+
+// function sentenceCase (str) {
+//     if ((str===null) || (str===''))
+//          return false;
+//     else
+//      str = str.toString();
+  
+//    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+//   }
+  
+//   console.log(sentenceCase('PHP exercises. python exercises.'));
+
+// /* Task 12 */
+
+// var num = 35.36;
+// var n = num.toString();
+// alert(n)
+// var checkedNew = n.split('.').join("");
+// alert(checkedNew)
+
+// /* Task 13 */
+
+// var customerName = prompt("Please enter your name", "");
+// if (customerName!= null) {
+//     document.getElementById("username").value = customerName;
+// }
+
+// /* Task 14 */
+
+// const array1 = ["cake", "apple pie", "cookie", "chips", "patties"]
+
+// const found = array1.find(element => "cake");
+
+// console.log(found);
+
+
+// /* Task 15 */
+
+// function CheckPassword(inputtxt) 
+// { 
+// var passw=  /^[A-Za-z]\w{7,14}$/;
+// if(inputtxt.value.match(passw)) 
+// { 
+// alert('Correct, try another...')
+// return true;
+// }
+// else
+// { 
+// alert('Wrong...!')
+// return false;
+// }
+// }
+
+// /* Task 16 */
+
+// var str = "University of Karachi";
+// var ar = str.split(''); // empty string separator
+// console.log( ar );
+
+// /* Task 17 */
+
+// var name = prompt("Enter your Name?")
+// alert(name.substr(-1))
+
+// /* Task 18 */
+
+// console.log(count("The quick brown fox jumps over the lazy dog", 'the'));
+
+
+/////////////////////////////////////////////////////////////////
+
+
+/* Chapter 26-30 */
+
+// /* Task 1 */
+
+// var num = prompt("Enter any positive Integer")
+// var round = Math.round()
+// var floor = Math.floor()
+// var ceil = Math.ceil()
+// document.write("round off: "+round)
+// document.write("Floor: "+floor)
+// document.write("ceil: "+ceil)
+
+// /* Task 2 */
+
+// var num = prompt("Enter negative floating point number")
+// var round = Math.round(num)
+// var floor = Math.floor(num)
+// var ceil = Math.ceil(num)
+// document.write("round off: "+round)
+// document.write("Floor: "+floor)
+// document.write("ceil: "+ceil)
+
+// /* Task 3 */
+
+// var num = prompt("Enter number for absolute value")
+// var ab = Math.abs(num)
+// document.write("absolute value of number is: "+ab)
+
+// /* Task 4 */
+
+// die1 = (int)(Math.random()*6) + 1
+// die2 = (int)(Math.random()*6) + 1
+
+// document.write(die1)
+// document.write(die2)
+
+// /* Task 5 */
+
+// if (Math.random() < 0.5)
+// {
+//     document.write("Heads")
+// }   
+// else
+// {
+//     document.write("Tails")
+// }
+
+// /* Task 6 */
+
+// document.write(Math.floor(Math.random() * 100) + 1)
+
+// /* Task 7 */
+
+// var w = prompt("Enter your Weight a. 50 b. 50kgs c. 50.2kgs d. 50.2kilograms")
+// alert(The weight of the user is: "+w)
+
+
+// /* Task 8 */
+
+// var num = prompt("Enter random number to win between 1 to 10")
+// var luck = Math.floor(Math.random() * 10) + 1
+// if (num === luck)
+// {
+//     alert("Wow you win! correct guess")
+// } 
+// else
+// {
+//     alert("sorry incorrect, please try again later")
+// }
+
+
+/////////////////////////////////////////////////////////////////
+
+
+/* Chapter 31-34 */
+
+// /* Task 1 */
+
+// var today = new Date();
+// document.write(today)
+
+// /* Task 2 */
+
+// var months    = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+// var now       = new Date();
+// var thisMonth = months[now.getMonth()]; // getMonth method returns the month of the date (0-January :: 11-December)
+// var output = document.getElementById('output');
+// console.log(thisMonth);
+
+//  if(output.textContent !== undefined) {
+//     output.textContent = thisMonth;
+//   }
+//   else {
+//     output.innerText = thisMonth;
+//   }
+
+
+// /* Task 3 */
+
+// var today = new Date();
+//   var day = today.getDay();
+//   var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+//   console.log("Today is : " + daylist[day] + ".");
+//   var hour = today.getHours();
+//   var minute = today.getMinutes();
+//   var second = today.getSeconds();
+//   var prepand = (hour >= 12)? " PM ":" AM ";
+//   hour = (hour >= 12)? hour - 12: hour;
+//   if (hour===0 && prepand===' PM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Noon';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' PM';
+//   } 
+//   } 
+//   if (hour===0 && prepand===' AM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Midnight';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' AM';
+//   } 
+//   } 
+// console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+
+
+// /* Task 4 */
+
+// var today = new Date();
+//   var day = today.getDay();
+//   var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+//   console.log("Today is : " + daylist[day] + ".");
+//   var hour = today.getHours();
+//   var minute = today.getMinutes();
+//   var second = today.getSeconds();
+//   var prepand = (hour >= 12)? " PM ":" AM ";
+//   hour = (hour >= 12)? hour - 12: hour;
+//   if (hour===0 && prepand===' PM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Noon';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' PM';
+//   } 
+//   } 
+//   if (hour===0 && prepand===' AM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Midnight';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' AM';
+//   } 
+//   } 
+
+// if (daylist[day] === "sunday")
+// {
+//     alert("It’s Fun day")
+// }
+// if else (daylist[day] === "saturday")
+// {
+//     alert("It’s Fun day")
+// }
+// else
+// {
+//     alert("Hello its not a fun day.. keep working..")
+// }
+
+// console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+
+
+// /* Task 5 */
+
+// var lastday = function(y,m){
+//     return  new Date(y, m +1, 0).getDate();
+//     }
+//     console.log(lastday(2014,0));
+//     console.log(lastday(2014,1));
+//     console.log(lastday(2014,11));
+
+
+// /* Task 6 */
+
+// var today = new Date();
+//   var day = today.getDay();
+//   var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+//   console.log("Today is : " + daylist[day] + ".");
+//   var hour = today.getHours();
+//   var minute = today.getMinutes();
+//   var second = today.getSeconds();
+//   var prepand = (hour >= 12)? " PM ":" AM ";
+//   hour = (hour >= 12)? hour - 12: hour;
+//   if (hour===0 && prepand===' PM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Noon';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' PM';
+//   } 
+//   } 
+//   if (hour===0 && prepand===' AM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Midnight';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' AM';
+//   } 
+//   } 
+// console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+
+
+// /* Task 7 */
+
+
+    //         var date = new Date(); 
+    //         var hours = (date.getHours() < 10 ? '0' : '') +  
+    //             date.getHours(); 
+    //         var minutes = (date.getMinutes() < 10 ? '0' : '') +  
+    //             date.getMinutes(); 
+            
+    //         var div = document.getElementById('old_time'); 
+    //         div.innerHTML = hours + ":" + minutes; 
+    //     </script> 
+  
+    //     <button onclick="myFunction()"> 
+    //       Change 
+    //   </button> 
+        
+    //     <p id="change"></p> 
+    //     <script> 
+    //         // JavaScript function to 
+    //         // Display 12 hour format 
+    //         function myFunction() { 
+    //             var date = new Date(); 
+    //             var hours = date.getHours(); 
+    //             var minutes = date.getMinutes(); 
+                
+    //             // Check whether AM or PM 
+    //             var newformat = hours >= 12 ? 'PM' : 'AM';  
+                
+    //             // Find current hour in AM-PM Format 
+    //             hours = hours % 12;  
+                
+    //             // To display "0" as "12" 
+    //             hours = hours ? hours : 12;  
+    //             minutes = minutes < 10 ? '0' + minutes : minutes; 
+                
+    //             document.getElementById("change").innerHTML =  
+    //               hours + ':' + minutes + ' ' + newformat; 
+    //         } 
+
+
+// /* Task 8 */
+
+// var d = new Date();
+// d.setFullYear(2020);
+
+
+// /* Task 9 */
+
+// var r = new Date("May 1, 2020 01:15:00);
+// r.setDate(1);
+// var current = today.getDate()
+// document.write(current-r)
+
+// /* Task 10 */
+
+// var dateobj = new Date('December 05, 2015 22:50:16');
+// var current = today.getaDate()
+// document.write(current-dateobj) 
+
+// /* Task 11 */
+
+// var dateobj = new Date('December 05, 2015 23:08:16');
+// var date_obj_current = new Date('December 05, 2015 22:08:16');
+// document.write(date_obj_current-dateobj)
+
+// /* Task 12 */
+
+// var dateobj = new Date('December 05, 1915 23:08:16');
+// var date_obj_current = new Date('December 05, 2015 22:08:16');
+// alert(date_obj_current-dateobj)
+
+
+// /* Task 13 */
+
+// var age = prompt("Enter your age")
+// var birth_yr = 2020-(+age)
+// document.write("Your age is: "+age)
+// document.write("Your birth year is: "+birth_yr)
+
+
+// /* Task 14 */
+
+// document.write("KE Bill")
+// document.write("Customer Name: ABC CUSTOMER")
+// document.write("Month: February")
+// document.write("Number of units: 410")
+// document.write("Charges per unit: 16")
+// document.write("Customer Name: ABC CUSTOMER")
+// document.write("\n")
+// document.write("Net amount  Payable (within due date): 6560")
+// document.write("Late payment surcharge: 350")
+// document.write("Gross Amount Payable (after Due Date): 6910")
+
+
+/////////////////////////////////////////////////////////////////
+
+
+
+/* Chapter 35-38 */
+
+
+// /* Task 1 */
+
+// function getCurrentDate()
+// {
+//     var curDate=new Date();
+//     document.write(curDate)
+// }
+// getCurrentDate();
+
+// /* Task 2 */
+
+// function name (a,b)
+// {
+//     var a,b;
+//     document.write("First Name: "+a)
+//     document.write("Last Name: "+b)
+// }
+// var p = name("ebad","shahid");
+
+// /* Task 3 */
+
+// "use strict";
+
+// function add() {
+//     var x = Number(document.getElementById('x').value);
+//     var y = Number(document.getElementById('y').value);
+
+//     document.getElementById('result').innerHTML = x+y;
+//     return false;
+// }
+
+// document.getElementById('go').addEventListener('click', add);
+
+// /* Task 4 */
+
+// var n1;
+// var n2;
+// var op;
+// var add;
+// var sub;
+// var mul;
+// var div;
+// var mod;
+// function calculator(n1,op,n2)
+// {
+//   if (op === "+")
+//   {
+//     add = n1+n2
+//     alert(n1+"+"+n2+"="+add)
+//   }
+//   if (op === "-")
+//   {
+//     sub = n1-n2
+//     alert(n1+"-"+n2+"="+sub)
+//   }
+//   if (op === "*")
+//   {
+//     mul = n1*n2
+//     alert(n1+"*"+n2+"="+mul)
+//   }
+//   if (op === "/")
+//   {
+//     div = n1/n2
+//     alert(n1+"/"+n2+"="+div)
+//   }
+//   if (op === "%")
+//   {
+//     mod = n1%n2
+//     alert(n1+"%"+n2+"="+mod)
+//   }
+//   else
+//   {
+//     alert("Incorrect operator selected!")
+//   }
+// }
+
+// var result = calculator(1,+,1);
+// document.write(result)
+
+
+// /* Task 5 */
+
+// var result
+// var num
+// function sq(5)
+// {
+//     result= (5*5)
+//     return result
+// }
+// sq(5);
+
+// /* Task 6 */
+
+// function factorial(n){
+//     let answer = 1;
+//     if (n == 0 || n == 1){
+//       return answer;
+//     }else{
+//       for(var i = n; i >= 1; i--){
+//         answer = answer * i;
+//       }
+//       return answer;
+//     }  
+//   }
+//   let n = 4;
+//   answer = factorial(n)
+//   console.log("The factorial of " + n + " is " + answer);
+
+
+// /* Task 7 */
+
+
+// var num1,num2
+// var i
+// function counting(num1, num2)
+// {
+//     for (i=num1; i<=num2; i++)
+//     {
+//         document.write(i)
+//     }    
+// }
+
+// var result = counting(1,10);
+// document.write(result)
+
+
+// /* Task 8 */
+
+// function pythagorean(sideA, sideB){
+//     return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+//   }
+  
+//   console.log(pythagorean(4, 3));
+
+
+// /* Task 9 */
+
+// var length = prompt("Enter a whole number for the length of your rectangle.");
+// var width = prompt("Enter a whole number for the width of your rectangle.");
+// function area(length, width) {
+//     return length * width;
+// }
+// function perimeter(length, width) {
+//     return 2*( length + width);
+// }
+
+// document.writeln('The area of your rectangle is ' + area(length, width));         
+// document.writeln('The perimeter of your rectangle is ' + perimeter(length, width));
+
+
+// /* Task 10 */
+
+// function check_Palindrome(str_entry){
+//     // Change the string into lower case and remove  all non-alphanumeric characters
+//        var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+//         var ccount = 0;
+//     // Check whether the string is empty or not
+//         if(cstr==="") {
+//             console.log("Nothing found!");
+//             return false;
+//         }
+//     // Check if the length of the string is even or odd 
+//         if ((cstr.length) % 2 === 0) {
+//             ccount = (cstr.length) / 2;
+//         } else {
+//     // If the length of the string is 1 then it becomes a palindrome
+//             if (cstr.length === 1) {
+//                 console.log("Entry is a palindrome.");
+//                 return true;
+//             } else {
+//     // If the length of the string is odd ignore middle character
+//                 ccount = (cstr.length - 1) / 2;
+//             }
+//         }
+//     // Loop through to check the first character to the last character and then move next
+//         for (var x = 0; x < ccount; x++) {
+//     // Compare characters and drop them if they do not match 
+//             if (cstr[x] != cstr.slice(-1-x)[0]) {
+//                 console.log("Entry is not a palindrome.");
+//                 return false;
+//             }
+//         }
+//         console.log("The entry is a palindrome.");
+//         return true;
+//     }
+//     check_Palindrome('madam');
+//     check_Palindrome('nurses run');
+//     check_Palindrome('fox');
+
+
+// /* Task 11 */
+
+// function uppercase(str)
+// {
+//   var array1 = str.split(' ');
+//   var newarray1 = [];
+    
+//   for(var x = 0; x < array1.length; x++){
+//       newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
+//   }
+//   return newarray1.join(' ');
+// }
+// console.log(uppercase("the quick brown fox"));
+
+
+// /* Task 12 */
+
+// function find_longest_word(str)
+// {
+//   var array1 = str.match(/\w[a-z]{0,}/gi);
+//   var result = array1[0];
+
+//   for(var x = 1 ; x < array1.length ; x++)
+//   {
+//     if(result.length < array1[x].length)
+//     {
+//     result = array1[x];
+//     } 
+//   }
+//   return result;
+// }
+// console.log(find_longest_word('Web Development Tutorial'));
+
+
+// /* Task 13 */
+
+// function char_count(str, letter) 
+// {
+//  var letter_Count = 0;
+//  for (var position = 0; position < str.length; position++) 
+//  {
+//     if (str.charAt(position) == letter) 
+//       {
+//       letter_Count += 1;
+//       }
+//   }
+//   return letter_Count;
+// }
+
+// console.log(char_count('hello.com', 'o'));
+
+// Copy
+// Sample Output:
+
+
+// /* Task 14 */
+
+// function circle(radius)
+// {
+//     this.radius = radius;
+//   // area method
+//     this.area = function () 
+//     {
+//         return Math.PI * this.radius * this.radius;
+//     };
+//   // perimeter method
+//     this.perimeter = function ()
+//     {
+//         return 2*Math.PI*this.radius;
+//     };
+// }
+// var c = new circle(3);
+// console.log('Area =', c.area().toFixed(2));
+// console.log('perimeter =', c.perimeter().toFixed(2));
+// console.log("Area of circle is: "+(Math.PI*(radius*radius))
+// console.log("Circumference of circle: "+(2*Math.PI*radius))
+
+
+/////////////////////////////////////////////////////////////////
