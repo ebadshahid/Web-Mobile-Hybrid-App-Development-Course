@@ -459,20 +459,122 @@
 // /* Chapter 12-13 */
 
 // /* Task 1 */
-// alert()
+// var ch = prompt("Enter a Character")
+// if (ch>=65 && ch<=90)
+// {
+//     alert("Character is a capital letter")
+// }		
+// else if (ch>=97 && ch<=122)
+// {
+//     alert("Character is a small letter")
+// }
+// else if (ch>=48 && ch<=57)
+// {
+//     alert("Character is a digit")
+// }	
+// else if ((ch>0 && ch<=47)||(ch>=58 && ch<=64) || (ch>=91 && ch<=96)||(ch>=123 && ch<=127))
+// {
+//     alert("Character is a special symbol")
+// }	
+// else
+// {
+//     alert("please check your input")
+// }
+
 // /* Task 2 */
-// alert("Error! Please enter a valid password")
+
+// var num1, num2;
+// num1 = window.prompt("Input the First integer", "0");
+// num2 = window.prompt("Input the second integer", "0");
+                                                 
+// if(parseInt(num1, 10) > parseInt(num2, 10)) 
+//   { 
+//   console.log("The larger of "+ num1+ " and "+ num2+ " is "+ num1+ ".");
+//   }   
+// else
+//   if(parseInt(num2, 10) > parseInt(num1, 10)) 
+//   {
+//   console.log("The larger of "+ num1+" and "+ num2+ " is "+ num2+ ".");
+//   }                  
+// else
+//   {
+//    console.log("The values "+ num1+ " and "+num2+ " are equal.");
+//   }
+
 // /* Task 3 */
-// alert("Welcome to JS Land... \nHappy Coding!")
+
+// function positive_negative(x, y)
+// {
+//   if ((x < 0 && y > 0) || x > 0 && y < 0) 
+//   {
+//     return true;
+//   }
+//   else 
+//   {
+//     return false;
+//   }
+// }
+// console.log(positive_negative(2, 2));
+// console.log(positive_negative(-2, 2));
+// console.log(positive_negative(2, -2));
+// console.log(positive_negative(-2, -2));
+
 // /* Task 4 */
-// alert("Welcome to JS Land...")
-// alert("Happy Coding!")
+
+// function isVowel(argument){
+
+// 	var text;
+// 	var argument = argument.toLowerCase();
+
+//     var vowels = (['a', 'e', 'i', 'o', 'u']);
+
+//     for (var i = 0; i <= vowels.length; i++){
+//         if (argument != vowels[i]) {
+//             continue;
+//         }
+//         return true;
+//     }
+//     return false;
+// }
+
+// // See if "A" is a vowel
+// var char = "A";
+
+// if (isVowel(char)) {
+// 	console.log(char + " is a vowel");
+// } else {
+// 	console.log(char + " is not a vowel");
+// }
+
 // /* Task 5 */
-// console.log("Hello... I can run JS through my web browser's console")
+
+// var pass = "correct"
+// var pass_enter = prompt("Enter your password")
+// if (pass ===pass_enter)
+// {
+//     alert("Correct! The password you entered matches the original password")
+// }
+// else 
+// {
+//     alert("Incorrect password")
+// }
+
 // /* Task 6 */
-// // Done in website code
+
+// var hour = prompt("Enter current hour")
+// if (hour < 18)
+// {
+//     alert("Good day")
+// }
+// else
+// {
+//     alert("Good evening")
+// }
+
 // /* Task 7 */
-// // Done added <script src="app.js"></script> in head section of website.
+
+// var time = prompt("Enter time in 24 hour clock format like 1900-7pm")
+// chart is not visible in the pdf
 
 
 // /////////////////////////////////////////////////////////////////
@@ -481,49 +583,130 @@
 // /* Chapter 14-16 */
 
 // /* Task 1 */
-// alert()
-// /* Task 2 */
-// alert("Error! Please enter a valid password")
-// /* Task 3 */
-// alert("Welcome to JS Land... \nHappy Coding!")
+
+// var arrayName = []
+
+// // /* Task 2 */
+
+// var arrayName = ["ebad","shahid","basit"]
+
+// // /* Task 3 */
+
+// var cars = new Array("Saab", "Volvo", "BMW");
+
 // /* Task 4 */
-// alert("Welcome to JS Land...")
-// alert("Happy Coding!")
-// /* Task 5 */
-// console.log("Hello... I can run JS through my web browser's console")
-// /* Task 6 */
-// // Done in website code
-// /* Task 7 */
-// // Done added <script src="app.js"></script> in head section of website.
+
+// var points = [40, 100, 1, 5, 25, 10]
+
+// // /* Task 5 */
+
+// var myArr = [];
+// var value = 2;
+// for(var i = 0; i < value; i++) {
+//    myArr.push(false);
+// }
+// alert(myArr);
+
+// // /* Task 6 */
+
+// var person = ["John", "Doe", 46];
 
 
+// // /* Task 7 */
+// var qua = [SSC, HSC, BCS, BS, BCOM, MS, M.Phil, PhD]
+// for (int i=0 ; i<8 ; i++)
+// {
+//     document.write(qua)
+// }
 
-
-// /////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 
 
 // /* Chapter 17-20 */
 
 // /* Task 1 */
-// alert()
-// /* Task 2 */
-// alert("Error! Please enter a valid password")
-// /* Task 3 */
-// alert("Welcome to JS Land... \nHappy Coding!")
-// /* Task 4 */
-// alert("Welcome to JS Land...")
-// alert("Happy Coding!")
-// /* Task 5 */
-// console.log("Hello... I can run JS through my web browser's console")
-// /* Task 6 */
-// // Done in website code
-// /* Task 7 */
-// // Done added <script src="app.js"></script> in head section of website.
+// var arr = [[],[]]
+// // /* Task 2 */
+// var arr = [[0,1,2,3],[1,0,1,2],[2,1,0,1]]
+// document.write(arr)
+// // /* Task 3 */
+// for (int i=1;i<11;i++)
+// {
+//     document.write(i)
+// }
+// // /* Task 4 */
+// var table = prompt("Enter a number to show its multiplication table")
+// var length = prompt("Enter length of table")
+// for (int i=1;i<=length;i++)
+// {
+//     document.write(i+"X"+table+"="+((+table)*i))
+// }
 
+// // /* Task 5 */
 
+// fruits = [“apple”,“banana”,“mango”,“orange”,“strawberry”]
+// for (int i=0;i<=4;i++)
+// {
+//     document.write(fruits[i])
+//     document.write("Element at index "+i+" "+fruits[i])
+// }
 
+// // /* Task 6 */
 
-// /////////////////////////////////////////////////////////////////
+// for (int i=1;i<=15;i++)
+// {
+//     document.write(i)
+// }
+// for (int i=10;i>0;i--)
+// {
+//     document.write(i)
+// }
+
+// // /* Task 7 */
+// searching topic not studied
+// // /* Task 8 */
+// var array = [24, 53, 78, 91, 12]
+// var largest= 0;
+
+// for (i=0; i<=largest;i++){
+//     if (array>largest) {
+//         var largest=array[i];
+//     }
+// }
+// console.log(largest);
+
+// // /* Task 9 */
+// function min(input) {
+//     if (toString.call(input) !== "[object Array]")  
+//       return false;
+//  return Math.min.apply(null, input);
+//    }
+
+// console.log(min([24, 53, 78, 91, 12]));
+
+// // /* Task 10 */
+// for ( var i = 1; i <= 100; i++ )
+// {
+//   if ( i%3 === 0 && i%5 === 0 )
+//   {
+//     console.log( i + " FizzBuzz" );
+//   }
+//   else if ( i%3 === 0 ) 
+//   {
+//     console.log(i+ " Fizz" );
+//   }
+//   else if ( i%5 === 0 ) 
+//   {
+//     console.log(i+ " Buzz" );
+//   }
+//   else
+//   {
+//     console.log(i);
+//   }
+// }
+
+////////////////////////////////////////////////////////////////////
+
 
 /* Chapter 21-25 */
 
@@ -1275,4 +1458,489 @@
 /////////////////////////////////////////////////////////////////
 
 
-THIS FILE CONTAIN ASSIGNMENT 5 AND 6.
+
+/* Chapter 38-42 */
+
+
+// /* Task 1 */
+
+// function pow(x, n) {
+//     let result = x;
+  
+//     for (let i = 1; i < n; i++) {
+//       result *= x;
+//     }
+  
+//     return result;
+//   }
+  
+//   let x = prompt("x?", '');
+//   let n = prompt("n?", '');
+  
+//   if (n < 1) {
+//     alert(`Power ${n} is not supported, use a positive integer`);
+//   } else {
+//     alert( pow(x, n) );
+//   }
+
+// /* Task 2 */
+
+{/* <head> 
+    <title> 
+        JavaScript to check leap year 
+    </title> 
+</head> 
+  
+<body> 
+    Input Year: <input type="text" id = "year"/> 
+      
+    <input type="button" id="button" onClick="isLeapYear()"
+            value="Check Leap Year"> 
+      
+    <p id="GFG"></p> 
+      
+    <!-- JavaScript code to check given year is 
+        leap year or not -->
+    <script> 
+        function isLeapYear() { 
+            var year= document.getElementById("year").value; 
+              
+            document.getElementById("GFG").innerHTML  
+                = (year % 100 === 0) ? (year % 400 === 0) 
+                                     : (year % 4 === 0); 
+        } 
+    </script> 
+</body> 
+  
+</html>                   */}
+
+// /* Task 3 */
+
+// // gives you the area of a triangle if you know all 3 sides
+// var triarea = function(side1,side2,side3) {
+// 	var p = (side1+side2+side3)/2;
+// 	var a = Math.sqrt(p*(p-side1)*(p-side2)*(p-side3));
+//   return a;
+// }
+// //fill in side lengths below
+// document.write(triarea(11,9,9));
+
+
+// /* Task 4 */
+
+// var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+
+// var Avgmarks = 0;
+
+// for (var i=0; i < students.length; i++) {
+//         Avgmarks += students[i][1];
+//         var avg = (Avgmarks/students.length);
+// }
+
+// console.log("Average grade: " + (Avgmarks)/students.length);
+
+//         if (avg < 60){
+//           console.log("Grade : F");      
+//           } 
+//         else if (avg < 70) {
+//                 console.log("Grade : D"); 
+//                   } 
+//         else if (avg < 80) 
+//              {
+//                 console.log("Grade : C"); 
+//         } else if (avg < 90) {
+//                 console.log("Grade : B"); 
+//         } else if (avg < 100) {
+//                 console.log("Grade : A"); 
+// }
+
+// /* Task 5 */
+
+// var str = "Hello world, welcome to the universe.";
+// var n = str.indexOf("e");
+
+// /* Task 6 */
+
+// var string = "heelloo world";
+// var vowel = ["a", "e", "i", "o", "u"];
+
+// String.prototype.character = function name() {
+//     var i;
+//     for ( i = 0; i < vowel.length; i++) {
+//         var secondLoop = string.length;
+//         for ( j = 0; j < secondLoop; j++) {
+//             if (vowel[i] == string.charAt(j)) {
+//                 string = string.slice(0, j).concat(string.slice(j + 1, secondLoop));
+//             }
+
+//         }
+//     }
+// }
+
+// string.character();
+// console.log(string);
+// //hello wrld
+
+// /* Task 7 */
+
+// function findOccurrences() {
+//     var str = "Pleases read this application and give me gratuity";
+//     var count = 0;
+//     let haveSeenVowel = false;
+  
+//     for (const letter of str.toLowerCase()) {
+//       switch (letter) {
+//         case 'a':
+//         case 'e':
+//         case 'i':
+//         case 'o':
+//         case 'u':
+//           {
+//             if (haveSeenVowel) {
+//               count++;
+//               haveSeenVowel = false;
+//             } else {
+//               haveSeenVowel = true;
+//             }
+//             break;
+//           }
+//         default:
+//           haveSeenVowel = false
+//       }
+//     }
+  
+//     return count
+//   }
+  
+//   console.log(findOccurrences());
+
+// /* Task 8 */
+
+// <!DOCTYPE html>
+// <html>
+//   <head>
+//     <title>Distance between Two Places</title>
+//     <meta charset="UTF-8">
+//     <link rel="stylesheet" type="text/css" href="styles.css" />
+//      <script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAA7j_Q-rshuWkc8HyFI4V2HxQYPm-xtd00hTQOC0OXpAMO40FHAxT29dNBGfxqMPq5zwdeiDSHEPL89A" type="text/javascript"></script>
+//      <script type="text/javascript">
+
+//     var geocoder, location1, location2;
+
+//     function initialize() {
+//         geocoder = new GClientGeocoder();
+//     }
+
+//     function showLocation() {
+//         geocoder.getLocations(document.forms[0].address1.value, function (response) {
+//             if (!response || response.Status.code != 200)
+//             {
+//                 alert("Sorry, we were unable to geocode the first address");
+//             }
+//             else
+//             {
+//                 location1 = {lat: response.Placemark[0].Point.coordinates[1], lon: response.Placemark[0].Point.coordinates[0], address: response.Placemark[0].address};
+//                 geocoder.getLocations(document.forms[0].address2.value, function (response) {
+//                     if (!response || response.Status.code != 200)
+//                     {
+//                         alert("Sorry, we were unable to geocode the second address");
+//                     }
+//                     else
+//                     {
+//                         location2 = {lat: response.Placemark[0].Point.coordinates[1], lon: response.Placemark[0].Point.coordinates[0], address: response.Placemark[0].address};
+//                         calculateDistance();
+//                     }
+//                 });
+//             }
+//         });
+//     }
+
+//     function calculateDistance()
+//     {
+//         try
+//         {
+//             var glatlng1 = new GLatLng(location1.lat, location1.lon);
+//             var glatlng2 = new GLatLng(location2.lat, location2.lon);
+//             var miledistance = glatlng1.distanceFrom(glatlng2, 3959).toFixed(1);
+//             var kmdistance = (miledistance * 1.609344).toFixed(1);
+
+//             document.getElementById('results').innerHTML = '<strong>Distance: </strong>' + miledistance + ' miles (or ' + kmdistance + ' kilometers)';
+//         }
+//         catch (error)
+//         {
+//             alert(error);
+//         }
+//     }
+
+
+
+//     </script>
+//   </head>
+//   <body onload="initialize()">
+
+//     <form action="#" onsubmit="showLocation(); return false;">
+//       <input id="geocomplete" type="text" name="address1" placeholder="Type in an address" size="90" />
+//         <input id="geocomplete1" type="text" name="address2" placeholder="Type in an address" size="90" />
+//      <input type="submit" name="find" value="Search" />
+//     </form>
+
+//    <p id="results"></p>
+
+//     <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+//     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+//     <script src="../jquery.geocomplete.js"></script>
+//     <script src="logger.js"></script>
+
+//     <script>
+//       $(function(){
+
+//         $("#geocomplete").geocomplete()
+//           .bind("geocode:result", function(event, result){
+//             $.log("Result: " + result.formatted_address);
+//           })
+//           .bind("geocode:error", function(event, status){
+//             $.log("ERROR: " + status);
+//           })
+//           .bind("geocode:multiple", function(event, results){
+//             $.log("Multiple: " + results.length + " results found");
+//           });
+
+//           $("#geocomplete1").geocomplete()
+//           .bind("geocode:result", function(event, result){
+//             $.log("Result: " + result.formatted_address);
+//           })
+//           .bind("geocode:error", function(event, status){
+//             $.log("ERROR: " + status);
+//           })
+//           .bind("geocode:multiple", function(event, results){
+//             $.log("Multiple: " + results.length + " results found");
+//           });
+
+//         $("#find").click(function(){
+//           $("#geocomplete").trigger("geocode");
+//         });
+
+
+//         $("#examples a").click(function(){
+//           $("#geocomplete").val($(this).text()).trigger("geocode");
+//           return false;
+//         });
+
+//       });
+//     </script>
+//   </body>
+// </html>
+
+// /* Task 9 */
+
+// /* Task 10 */
+
+
+/////////////////////////////////////////////////////////////////
+
+
+/* Chapter 43-48 */
+
+// /* Task 1 */
+
+// function reallySure (event) {
+//     var message = 'Are you sure about that?';
+//     action = confirm(message) ? true : event.preventDefault();
+// }
+// var aElems = document.getElementsByTagName('a');
+
+// for (var i = 0, len = aElems.length; i < len; i++) {
+//     aElems[i].addEventListener('click', reallySure);
+// }
+
+// /* Task 2 */
+
+/* <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  This is an alert box.
+</div> */
+
+// /* Task 3 */
+
+/* <script>
+    function SomeDeleteRowFunction(o) {
+     //no clue what to put here?
+     var p=o.parentNode.parentNode;
+         p.parentNode.removeChild(p);
+    }
+    </script>
+
+    <table>
+       <tr>
+           <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+       </tr>
+       <tr>
+           <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+       </tr>
+       <tr>
+           <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+       </tr>
+    </table> */
+
+// /* Task 4 */
+
+// $(document).ready(function() {
+//     $( "#myImg" ).mouseover(function(){
+//         $(this).attr("src", "http://www.jqueryui.com/images/logo.gif");
+//     });
+
+//     $( "#myImg" ).mouseout(function(){
+//         $(this).attr("src", "http://static.jquery.com/files/rocker/images/logo_jquery_215x53.gif");
+//     });
+// });
+
+// /* Task 5 */
+
+/* <html>
+<head>
+    <title>Space Clicker</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+    var clicks = 0;
+    function hello() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onclick="hello()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+
+</body></html> */
+
+
+/////////////////////////////////////////////////////////////////
+
+
+/* Chapter 43-48 */
+
+
+// /* Task 1 */
+
+// function reallySure (event) {
+//     var message = 'Are you sure about that?';
+//     action = confirm(message) ? true : event.preventDefault();
+// }
+// var aElems = document.getElementsByTagName('a');
+
+// for (var i = 0, len = aElems.length; i < len; i++) {
+//     aElems[i].addEventListener('click', reallySure);
+// }
+
+// /* Task 2 */
+
+/* <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  This is an alert box.
+</div> */
+
+// /* Task 3 */
+
+{/* <script>
+    function SomeDeleteRowFunction(o) {
+     //no clue what to put here?
+     var p=o.parentNode.parentNode;
+         p.parentNode.removeChild(p);
+    }
+    </script>
+
+    <table>
+       <tr>
+           <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+       </tr>
+       <tr>
+           <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+       </tr>
+       <tr>
+           <td><input type="button" value="Delete Row" onclick="SomeDeleteRowFunction(this)"></td>
+       </tr>
+    </table> */}
+
+// /* Task 4 */
+
+// $(document).ready(function() {
+//     $( "#myImg" ).mouseover(function(){
+//         $(this).attr("src", "http://www.jqueryui.com/images/logo.gif");
+//     });
+
+//     $( "#myImg" ).mouseout(function(){
+//         $(this).attr("src", "http://static.jquery.com/files/rocker/images/logo_jquery_215x53.gif");
+//     });
+// });
+
+// /* Task 5 */
+
+/* <html>
+<head>
+    <title>Space Clicker</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+    var clicks = 0;
+    function hello() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onclick="hello()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+
+</body></html> */
+
+
+/////////////////////////////////////////////////////////////////
+
+
+/* Chapter 49-52 */
+
+// /* Task 1 */
+
+// <!DOCTYPE html>
+// <html>
+// <head>
+//     <title>JavaScript Form Demo</title>
+//     <link rel="stylesheet" href="css/form.css">
+// </head>
+// <body>
+//     <div id="container">
+//         <form action="signup.html" method="post" id="signup">
+//             <h1>Sign Up</h1>
+//             <small></small>
+//             <input type="text" placeholder="Full Name">
+//             <small></small>
+//             <input type="text" placeholder="Email Address">
+//             <input type="submit" value="Subscribe">
+//         </form>
+//     </div>
+//     <script src="js/form.js"></script>
+// </body>
+// </html>
+
+// /* Task 2 */
+
+
+
+// /* Task 3 */
+
+
+/////////////////////////////////////////////////////////////////
+
+/* Chapter 58-67 */
+
+
+// /* Task 1 */
+
+// /* Task 2 */
+
+
+/////////////////////////////////////////////////////////////////
